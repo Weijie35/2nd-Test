@@ -27,31 +27,42 @@ public class MyCustomStringTest {
         assertEquals(7, mycustomstring.countNumbers());
     }
 
-    @Test
+    //check whether the method countNumbers() will throw NullPointerException if the string is null
+    @Test(expected = NullPointerException.class)
     public void testCountNumbers2() {
-        fail("Not yet implemented");
+    	mycustomstring.setString(null);
+        mycustomstring.countNumbers();
     }
 
+    //check whether countNumbers() accept a large number
     @Test
     public void testCountNumbers3() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("4503599627370496");
+        assertEquals(1, mycustomstring.countNumbers());
     }
-
+    //check whether countNumbers() run correctly if the string starts and end with a digit
     @Test
     public void testCountNumbers4() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("4neer45 gona gie 1314yu up6");
+        assertEquals(4, mycustomstring.countNumbers());
     }
-
+    //check whether countNumbers() will output 0 if the string is empty.
     @Test
     public void testCountNumbers5() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("");
+        assertEquals(0, mycustomstring.countNumbers());
     }
-
+    //check whether countNumbers() will run correctly if the string contain specific sign.
     @Test
     public void testCountNumbers6() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("(*0 3,67ô0-9'fds\\ɱ910.1");
+        assertEquals(7, mycustomstring.countNumbers());
     }
 
+    
+    
+    /**Test for the method testGetEveryNthCharacterFromBeginningOrEnd*/
+    //regular test
     @Test
     public void testGetEveryNthCharacterFromBeginningOrEnd1() {
         mycustomstring.setString("I'd b3tt3r put s0me d161ts in this 5tr1n6, right?");
@@ -64,106 +75,155 @@ public class MyCustomStringTest {
         assertEquals("'bt t0 6snh r6rh", mycustomstring.getEveryNthCharacterFromBeginningOrEnd(3, true));
     }
 
+    //it will output following the order in which they appear in the string when startFromEnd = true
     @Test
     public void testGetEveryNthCharacterFromBeginningOrEnd3() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("4ne$er45 go@nna give 1314y,oU,up6");
+        assertEquals("$ nv1U", mycustomstring.getEveryNthCharacterFromBeginningOrEnd(5, true));
     }
 
     @Test
     public void testGetEveryNthCharacterFromBeginningOrEnd4() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("4ne$er45 go@nna give 1314y,oU,up6");
+        assertEquals("egae4,", mycustomstring.getEveryNthCharacterFromBeginningOrEnd(5, false));
     }
-
+    
+    //check whether the method will output empty if n > the length of the string
     @Test
     public void testGetEveryNthCharacterFromBeginningOrEnd5() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("12345678910");
+        assertEquals("", mycustomstring.getEveryNthCharacterFromBeginningOrEnd(12, true));
     }
-
+    
+    //check whether the method will output empty if the string is empty
     @Test
     public void testGetEveryNthCharacterFromBeginningOrEnd6() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("");
+        assertEquals("", mycustomstring.getEveryNthCharacterFromBeginningOrEnd(4, true));
     }
-
-    @Test
+   
+    //check the method will throw IllegalArgumentException if n = 0
+    @Test(expected = IllegalArgumentException.class)
     public void testGetEveryNthCharacterFromBeginningOrEnd7() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("12345678910");
+        assertEquals("12345678910", mycustomstring.getEveryNthCharacterFromBeginningOrEnd(0, true));
     }
 
+    //check whether the method runs correctly after multiple modified
     @Test
     public void testGetEveryNthCharacterFromBeginningOrEnd8() {
-        fail("Not yet implemented");
+        String testString = "";
+    	for(int i = 1; i <= 10 ; i++) {
+    		mycustomstring.setString(testString);
+    		testString += i;
+    	}
+        assertEquals("123456789", mycustomstring.getEveryNthCharacterFromBeginningOrEnd(1, false));
     }
 
+    //when the string consists of space
     @Test
     public void testGetEveryNthCharacterFromBeginningOrEnd9() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("           ");
+        assertEquals("  ", mycustomstring.getEveryNthCharacterFromBeginningOrEnd(4, true));
     }
 
     @Test
     public void testGetEveryNthCharacterFromBeginningOrEnd10() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("IllegalArgumentException");
+        assertEquals("eAmEpn", mycustomstring.getEveryNthCharacterFromBeginningOrEnd(4, false));
     }
 
-    @Test
+    //check the method will throw IllegalArgumentException even if empty string with n = 0
+    @Test(expected = IllegalArgumentException.class)
     public void testGetEveryNthCharacterFromBeginningOrEnd11() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("");
+    	assertEquals("",mycustomstring.getEveryNthCharacterFromBeginningOrEnd(0, false));
     }
 
-    @Test
+    //check the IllegalArgumentException if the n <=0
+    @Test(expected = IllegalArgumentException.class)
     public void testGetEveryNthCharacterFromBeginningOrEnd12() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("I'd b3tt3r put s0me d161ts in this 5tr1n6, right?");
+        mycustomstring.getEveryNthCharacterFromBeginningOrEnd(-1, false);
     }
-
-    @Test
+    
+    //n <= 0, it will throw IllegalArgumentException even if the string is null
+    @Test(expected = IllegalArgumentException.class)
     public void testGetEveryNthCharacterFromBeginningOrEnd13() {
-        fail("Not yet implemented");
+    	mycustomstring.setString(null);
+        mycustomstring.getEveryNthCharacterFromBeginningOrEnd(-1, true);
     }
 
-    @Test
+    //the string is null and n > 0
+    @Test(expected = NullPointerException.class)
     public void testGetEveryNthCharacterFromBeginningOrEnd14() {
-        fail("Not yet implemented");
+    	mycustomstring.setString(null);
+        mycustomstring.getEveryNthCharacterFromBeginningOrEnd(3, false);
     }
-
+    
+    
+    /**Tests for the method ConvertDigitsToNamesInSubstring()*/
     @Test
     public void testConvertDigitsToNamesInSubstring1() {
-        mycustomstring.setString("I'd b3tt3r put s0me d161ts in this 5tr1n6, right?");
-        mycustomstring.convertDigitsToNamesInSubstring(17, 23);
-        assertEquals("I'd b3tt3r put sZerome dOneSix1ts in this 5tr1n6, right?", mycustomstring.getString());
-    }
+       mycustomstring.setString("I'd b3tt3r put s0me d161ts in this 5tr1n6, right?");
+       mycustomstring.convertDigitsToNamesInSubstring(17, 23);
+       assertEquals("I'd b3tt3r put sZerome dOneSix1ts in this 5tr1n6, right?", mycustomstring.getString());
+   }
 
+   //it will output the origin string if the string does not contain digits
     @Test
     public void testConvertDigitsToNamesInSubstring2() {
-        fail("Not yet implemented");
+    	 mycustomstring.setString("I'd better put some digits in this string, right?");
+         mycustomstring.convertDigitsToNamesInSubstring(17, 23);
+         assertEquals("I'd better put some digits in this string, right?", mycustomstring.getString());
     }
 
+    //covert all digits from the string
     @Test
     public void testConvertDigitsToNamesInSubstring3() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("4ne$er45 9");
+        mycustomstring.convertDigitsToNamesInSubstring(1,10);
+        assertEquals("Fourne$erFourFive Nine", mycustomstring.getString());
     }
 
-    @Test
+    //check the method will throw MyIndexOutOfBoundsException 
+    //if startPosition < endPosition but both are less than zero 
+    @Test(expected = MyIndexOutOfBoundsException.class )
     public void testConvertDigitsToNamesInSubstring4() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("4ne$er45 go@nna give 1314y,oU,upn");
+        mycustomstring.convertDigitsToNamesInSubstring(-1,0);
     }
 
-    @Test
+    //check the method will throw IllegalArgumentException 
+    //when "startPosition" > "endPosition", even if the string is null
+    @Test(expected = IllegalArgumentException.class )
     public void testConvertDigitsToNamesInSubstring5() {
-        fail("Not yet implemented");
+    	mycustomstring.setString("null");
+        mycustomstring.convertDigitsToNamesInSubstring(24,22);
     }
-
-    @Test
+    
+    //check the method will throw MyIndexOutOfBoundsException
+    //If "startPosition" and "endPosition" are greater than the string
+    @Test(expected = MyIndexOutOfBoundsException.class )
     public void testConvertDigitsToNamesInSubstring6() {
-        fail("Not yet implemented");
+       	 mycustomstring.setString("");
+         mycustomstring.convertDigitsToNamesInSubstring(17, 23);
+         assertEquals("", mycustomstring.getString());
     }
-
-    @Test
+    
+    //check the method will throw MyIndexOutOfBoundsException when startPosition and endPosition < 1, 
+    //even if the string is null
+    @Test(expected = MyIndexOutOfBoundsException.class )
     public void testConvertDigitsToNamesInSubstring7() {
-        fail("Not yet implemented");
+    	mycustomstring.setString(null);
+        mycustomstring.convertDigitsToNamesInSubstring(-2,0);
     }
 
-    @Test
+    //check the method will throw NullPointerException 
+    //If "startPosition" <= "endPosition" and both > 0 and the string is null
+    @Test(expected = NullPointerException.class )
     public void testConvertDigitsToNamesInSubstring8() {
-        fail("Not yet implemented");
+    	mycustomstring.setString(null);
+        mycustomstring.convertDigitsToNamesInSubstring(4,5);
     }
-
 }
