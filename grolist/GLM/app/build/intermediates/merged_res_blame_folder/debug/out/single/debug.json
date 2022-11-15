@@ -1,0 +1,130 @@
+[
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_activity_creating_new_item.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/activity_creating_new_item.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-xhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-anydpi-v26/ic_launcher_round.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_listitemquantity_row.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/listitemquantity_row.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_activity_create_new_list.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/activity_create_new_list.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_activity_quantity_list_item.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/activity_quantity_list_item.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_list_row.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/list_row.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_activity_list_manager.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/activity_list_manager.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_activity_delete_list.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/activity_delete_list.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-xxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_listitemdelete_row.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/listitemdelete_row.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_activity_list_item.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/activity_list_item.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_activity_select_type_for_new_item.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/activity_select_type_for_new_item.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "edu.qc.seclass.glm.app-pngs-9:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_listitem_row.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/listitem_row.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_listmanager_rename.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/listmanager_rename.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_activity_delete_list_item.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/activity_delete_list_item.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-hdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/drawable_ic_launcher_background.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/drawable/ic_launcher_background.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-anydpi-v26/ic_launcher.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_listdelete_row.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/listdelete_row.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_searchtool_row.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/searchtool_row.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_activity_main.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/activity_main.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_activity_search_tool.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/activity_search_tool.xml"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/mipmap-mdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "edu.qc.seclass.glm.app-merged_res-14:/layout_searchtool_quantityadd.xml.flat",
+        "source": "edu.qc.seclass.glm.app-main-16:/layout/searchtool_quantityadd.xml"
+    }
+]
